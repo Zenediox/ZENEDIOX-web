@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYDERN ZENEDIOX - Digital Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+      background-size: 300% 300%;
+      animation: bgMove 12s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 32px;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255,255,255,0.1);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      background: linear-gradient(135deg, #38bdf8, #6366f1, #a855f7);
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      color: white;
+    }
+
+    .brand {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 24px;
+    }
+
+    .info {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .label {
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    .value {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    a.callBtn {
+      display: block;
+      margin-top: 14px;
+      padding: 12px;
+      background: linear-gradient(135deg, #06b6d4, #3b82f6);
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      color: white;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+      transition: 0.2s;
+    }
+
+    a.callBtn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 22px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">BZ</div>
+
+    <div class="brand">BYDERN ZENEDIOX</div>
+    <div class="tagline">Digital Business Card</div>
+
+    <div class="info">
+      <div class="label">Namba ya Simu</div>
+      <div class="value">+255 622 268 725</div>
+    </div>
+
+    <a class="callBtn" href="tel:+255622268725">Piga Simu</a>
+
+    <footer>
+      © 2025 BYDERN ZENEDIOX
+    </footer>
+  </div>
+
+</body>
+  </html>
